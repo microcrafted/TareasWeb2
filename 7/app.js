@@ -28,9 +28,6 @@ console.log("Gracias por su compra, hasta luego");
 function mostrarMenu(){
     let menu = "¿Que producto desea agregar?\nProductos:\n";
 
-    // productos.forEach((producto, index) => {
-    //     menu += `${index + 1}.- ${producto.nombre}: $${producto.precio}\n`;
-    // });
 
     for(let i = 0; i <productos.length; i++){
         menu += (i+1)+".- "+ productos[i].nombre + " - $" + productos[i].precio + "\n";
