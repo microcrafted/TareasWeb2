@@ -83,7 +83,7 @@ function agregarProductoNuevo(){
     cantidad = parseInt(cantidad);
     if(isNaN(precio) || isNaN(cantidad) || precio <= 0 || cantidad <= 0){
         console.log("Valores no validos, por favor vuelva a intentarlo");
-    //trim() elimina los espacios en blanco al inicio y al final de una cadena de texto, si el usuario ingresa solo espacios en blanco, el resultado sera una cadena vacia ""
+
     }else if(nombre.trim() === ""){
         console.log("Nombre no valido, por favor ingrese un nombre valido");
     }else{
@@ -102,7 +102,7 @@ function eliminarDelCarrito(){
         if(isNaN(eliminar) || eliminar < 1 || eliminar > carrito.length){
             console.log("Numero de producto no valido");
         }else{
-            //el metodo splice devuelve un arreglo con el elemento eliminado, por eso se pone [0] para obtener el objeto eliminado
+
             let productoEliminado = carrito.splice(eliminar - 1, 1)[0];
             
             for(let i = 0; i < productos.length;i++){
